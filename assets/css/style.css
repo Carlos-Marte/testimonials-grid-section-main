@@ -50,7 +50,7 @@ body {
 .article {
     padding: 2em;
     border-radius: 10px;
-    background: inherit;
+    background: var(--white);
     box-shadow: 0 0 15px 1px rgb(0 0 0 / .3);
 }
 
