@@ -24,6 +24,7 @@ body {
     font-weight: 500;
     color: var(--white);
     background: var(--light-grayish-blue);
+    min-height: 100vh;
 }
 
 /* Main */
@@ -36,10 +37,10 @@ body {
     grid-template-columns: minmax(320px, 1fr);
     grid-auto-rows: max-content;
     grid-template-areas: "daniel"
-        "jonathan"
-        "jeanette"
-        "patrick"
-        "kira";
+                         "jonathan"
+                         "jeanette"
+                         "patrick"
+                         "kira";
     grid-auto-flow: dense;
     place-content: center;
     row-gap: 1.5em;
@@ -49,7 +50,7 @@ body {
 .article {
     padding: 2em;
     border-radius: 10px;
-    background: var(--white);
+    background: inherit;
     box-shadow: 0 0 15px 1px rgb(0 0 0 / .3);
 }
 
@@ -74,6 +75,23 @@ body {
 
 .article--bg-patrick {
     background: var(--very-dark-blackish-blue);
+}
+
+/* Grid areas */
+.article:first-child {
+    grid-area: daniel;
+}
+.article:nth-child(2) {
+    grid-area: jonathan;
+}
+.article:nth-child(3) {
+    grid-area: jeanette;
+}
+.article:nth-child(4) {
+    grid-area: patrick;
+}
+.article:last-child {
+    grid-area: kira;
 }
 
 .article__data-person {
@@ -125,4 +143,20 @@ body {
     flex-direction: column;
     gap: 1em;
     overflow-wrap: break-word;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    .main {
+        max-width: 1200px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "daniel daniel jonathan kira"
+                             "jeanette patrick patrick kira";
+        gap: 2em;
+    }
 }
