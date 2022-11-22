@@ -159,4 +159,8 @@ body {
                              "jeanette patrick patrick kira";
         gap: 2em;
     }
+
+    .article--bg-daniel::before {
+        right: 7em;
+    }
 }
