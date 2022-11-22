@@ -160,6 +160,14 @@ body {
         gap: 2em;
     }
 
+    .article__h2 {
+        font-size: 1.5em;
+    }
+
+    .article__p {
+        font-size: 1.2em;
+    }
+
     .article--bg-daniel::before {
         right: 7em;
     }
