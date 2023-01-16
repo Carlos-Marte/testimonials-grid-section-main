@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section
 
-:pushpin: Práctica proveniente de FrontendMentor. Está realizado usando `<HTML>`, `<CSS>` y `<JS>`.
+:pushpin: Práctica proveniente de FrontendMentor. Está realizado usando `<HTML>` y `<CSS>`.
 
 :pushpin: Maquetada con grid y flexbox.
 
